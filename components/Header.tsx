@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
 						<div className="flex items-center text-3xl font-sans font-medium gap-4 pl-2">
 							<a
 								className="flex items-center gap-2 bg-neutral-400 rounded-md pr-2 pl-2 pt-1 pb-1"
-								href="https://github.com"
+								href="https://github.com/rubenb1604/ImageShare"
 							>
 								<FaGithub className="" /> Github
 							</a>
@@ -89,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
 						<div className="flex items-center text-3xl font-sans font-medium gap-4 pr-2">
 							<a
 								className="gap-2 items-center bg-neutral-400 rounded-md pr-2 pl-2 pt-1 pb-1 hidden md:flex"
-								href="https://github.com"
+								href="https://github.com/rubenb1604/ImageShare"
 							>
 								<FaGithub className="" />
 								Github

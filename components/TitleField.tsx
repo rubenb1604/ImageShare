@@ -127,12 +127,13 @@ const TitleField: React.FC<FieldProps> = ({ link }) => {
         <>
           <h1 className="font-semibold text-2xl text-center">Dein Link:</h1>
           <a
-            href={`http://localhost:3000/view/${encryptId(linkId || "")}`}
+            href={`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`}
             className="text-center text-blue-700 underline"
+            
           >
 
             
-            localhost:3000/view/{encryptId(linkId || "")}
+            https://image-share-mu.vercel.app/view/{encryptId(linkId || "")}
           </a>
         </>
       )}
