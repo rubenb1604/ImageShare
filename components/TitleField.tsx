@@ -124,7 +124,7 @@ const TitleField: React.FC<FieldProps> = ({ link }) => {
       {isUploaded && (
 
 
-        <>
+        <div className="max-w-full">
           <h1 className="font-semibold text-2xl text-center">Dein Link:</h1>
           <a
             href={`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`}
@@ -135,7 +135,7 @@ const TitleField: React.FC<FieldProps> = ({ link }) => {
             
             https://image-share-mu.vercel.app/view/{encryptId(linkId || "")}
           </a>
-        </>
+        </div>
       )}
     </div>
   );
