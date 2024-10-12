@@ -20,7 +20,7 @@ const Upload = () => {
             <img
               src={imageUrl}
               alt="Uploaded"
-              className="max-w-full h-auto rounded-lg border-4 border-black"
+              className="max-w-full w-2/3 h-auto rounded-lg border-4 border-black"
             />
           </div>
         ) : (
