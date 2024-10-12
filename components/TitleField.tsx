@@ -146,7 +146,7 @@ const TitleField: React.FC<FieldProps> = ({ link }) => {
               )}
               {copied && (
                 <span onClick={() => {copyToClipboard(`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`)}}
-                  className="underlined cursor-pointer text-sm">
+                  className="underlined cursor-pointer text-xl">
                 Sucessfully copied!
               </span>
               )}
