@@ -136,25 +136,23 @@ const TitleField: React.FC<FieldProps> = ({ link }) => {
 
         <div className="max-w-full">
           <h1 className="font-semibold text-2xl text-center">Dein Link:</h1>
-          <a
-            href={`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`}
-            className="text-center text-blue-700 underline max-w-full font-sans"
+          
+            <div className="text-center">
+              {!copied && (
+                <span onClick={() => {copyToClipboard(`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`)}}
+                  className="underlined cursor-pointer text-sm">
+                Click to Copy!
+              </span>
+              )}
+              {copied && (
+                <span onClick={() => {copyToClipboard(`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`)}}
+                  className="underlined cursor-pointer text-sm">
+                Sucessfully copied!
+              </span>
+              )}
+            </div>
             
-          >
-            {!copied && (
-              <span onClick={() => {copyToClipboard(`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`)}}
-                className="underlined cursor-pointer text-sm">
-              Click to Copy!
-            </span>
-            )}
-            {copied && (
-              <span onClick={() => {copyToClipboard(`https://image-share-mu.vercel.app/view/${encryptId(linkId || "")}`)}}
-                className="underlined cursor-pointer text-sm">
-              Sucessfully copied!
-            </span>
-            )}
-            
-          </a>
+          
         </div>
       )}
     </div>
